@@ -1,0 +1,238 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive
+}
+#logo{
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    margin: 10px;
+    margin-left: 50px;
+}
+.navbar {
+    background-color: rgb(0, 127, 192);
+    height: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    padding: 0 15px;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+  padding-bottom: 5px;
+  font-family: 'Bebas Neue', cursive
+  }  
+  .nav-item a:hover {
+    color: rgb(88, 215, 255);
+  }
+  
+  .nav-item a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    right: 0;
+    height: 4px; 
+    border-radius: 10px;
+    background-color: rgb(88, 215, 255); 
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease; 
+  }
+  
+  .nav-item a:hover::after {
+    transform: scaleX(1); 
+  }
+  .Publication-et-Evenements {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 50px; 
+  width: 150px; 
+  background-color: #fff; 
+  padding: 10px; 
+  z-index: 3; 
+  
+
+  }
+  .Publication-et-Evenements > li > a {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+  }
+  .navbar ul.nav-menu li:hover ul.Publication-et-Evenements{
+    list-style: none;
+    display:block;
+    position: absolute;
+    background-color:rgb(0, 127, 192) ;
+  }
+  .Projets {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 50px; 
+    left: 49rem;
+    width: 100px; 
+    background-color: #fff; 
+    padding: 10px; 
+    z-index: 3; 
+      
+    }
+    .Projets > li >a{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    }
+    .navbar ul.nav-menu li:hover ul.Projets{
+      list-style: none;
+      display:block;
+      position: absolute;
+      background-color:rgb(0, 127, 192) ;
+  
+      
+    }
+
+  .Subnav-item a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+  .breadcrumb {
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  
+  .breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumb ul li {
+    display: inline;
+    font-family: 'Bebas Neue', cursive
+
+  }
+  
+  .breadcrumb ul li:not(:last-child)::after {
+    content: ">";
+    margin: 0 5px;
+    color: #999;
+    font-family: 'Bebas Neue', cursive
+
+  }
+  
+  .breadcrumb ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive
+  }
+  
+  .breadcrumb ul li a:hover {
+    text-decoration: underline;
+  } 
+  .container{ 
+    width: 100%;  
+    height: 300vh;
+    padding: 2rem; 
+    position: relative;
+  } 
+  .nav_sec{  
+    display: flex; 
+    justify-content: center; 
+    background-color:rgb(0, 127, 192) ;  
+    width: 100%;
+    padding: 1rem; 
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+  } 
+  .nav_sec>ul>li{ 
+    list-style: none; 
+    display: inline-block; 
+    margin-left: 3rem;
+  } 
+  .nav_sec>ul>li>a{ 
+    text-decoration: none; 
+    color: #fff;
+  } 
+  .description{ 
+    border-radius: 25px;
+    border: solid 1px;
+    border-color: #e9e9e9;
+    background-color: #f8f7f7; 
+    margin-top: 5rem; 
+    padding: 1rem;
+  } 
+  .title{ 
+    text-align: center; 
+    
+  } 
+  .image_holder{ 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 2rem;
+  } 
+  .Topics{ 
+    padding: 2rem; 
+    display: flex; 
+    align-items: center;  
+    flex-direction: column;
+    /* text-align: center; */
+  } 
+  .Topics>ul>li{ 
+    list-style: none; 
+    font-size: 20px; 
+    padding: 1.5rem; 
+    color:#457AAE;
+} 
+.Topics>ul>li>a{ 
+     text-decoration: none; 
+     
+} 
+.Publication_et_comm{ 
+  width: 100%; 
+  padding: 2rem;
+} 
+.pub_title{ 
+      text-align: center; 
+      color:rgb(0, 127, 192);
+} 
+.les_pub{  
+    margin-top: 1rem;
+    /* -webkit-box-shadow: 2px 2px Gray; */ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+
+} 
+.les_pub>p{ 
+    padding: 2rem; 
+} 
+.les_pub>p>a{ 
+    text-decoration: none; 
+    color: rgb(0, 127, 192);
+}
+ .active{ 
+    color:red
+ }
