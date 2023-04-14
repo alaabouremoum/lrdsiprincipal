@@ -1,0 +1,29 @@
+<script>
+    // JavaScript code to update the navigation bar styles on scroll
+
+document.addEventListener('scroll', function() {
+  const homeSection = document.getElementById('home');
+  const aboutSection = document.getElementById('about');
+  const contactSection = document.getElementById('contact');
+  const navBar = document.getElementById('navBar');
+
+  // Get the vertical scroll position
+  const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  // Check which section is currently visible
+  if (scrollPos >= homeSection.offsetTop && scrollPos < aboutSection.offsetTop) {
+    navBar.querySelector('a[href="#home"]').style.color = '#007bff';
+    navBar.querySelector('a[href="#about"]').style.color = '#333';
+    navBar.querySelector('a[href="#contact"]').style.color = '#333';
+  } else if (scrollPos >= aboutSection.offsetTop && scrollPos < contactSection.offsetTop) {
+    navBar.querySelector('a[href="#home"]').style.color = '#333';
+    navBar.querySelector('a[href="#about"]').style.color = '#007bff';
+    navBar.querySelector('a[href="#contact"]').style.color = '#333';
+  } else if (scrollPos >= contactSection.offsetTop) {
+    navBar.querySelector('a[href="#home"]').style.color = '#333';
+    navBar.querySelector('a[href="#about"]').style.color = '#333';
+    navBar.querySelector('a[href="#contact"]').style.color = '#007bff';
+  }
+});
+
+  </script>
